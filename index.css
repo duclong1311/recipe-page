@@ -125,20 +125,26 @@ ul li::marker {
 table {
   width: 100%;
   margin-top: var(--spacing-sm);
+  border-collapse: collapse;
+}
+
+th {
+  padding-left: var(--spacing-sm);
+  text-align: left;
 }
 
 tr {
   font-family: var(--font-body);
   font-size: var(--font-size-sm);
   color: var(--stone-600);
+  border-bottom: 1px solid var(--stone-150);
 }
 
 td {
   padding: var(--spacing-sm) 0;
-  border-bottom: 1px solid var(--stone-150);
 }
 
-tr:last-child td {
+tr:last-child {
   border-bottom: none;
 }
 
