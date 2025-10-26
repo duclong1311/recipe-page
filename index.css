@@ -39,6 +39,12 @@ body {
   gap: var(--spacing-md);
 }
 
+main {
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
 img {
   width: 100%;
   border-radius: 10px;
@@ -125,7 +131,6 @@ ul li::marker {
 table {
   width: 100%;
   margin-top: var(--spacing-sm);
-  border-collapse: collapse;
 }
 
 th {
@@ -144,7 +149,7 @@ td {
   padding: var(--spacing-sm) 0;
 }
 
-tr:last-child {
+tr:last-child td {
   border-bottom: none;
 }
 
