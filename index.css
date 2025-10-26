@@ -1,0 +1,148 @@
+@import url(variables.css);
+
+@font-face {
+  font-family: "Young Serif";
+  src: url(assets/fonts/young-serif/YoungSerif-Regular.ttf) format("truetype");
+  font-weight: normal;
+  font-style: normal;
+}
+
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--stone-100);
+  font-size: var(--font-size-base);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  background-color: var(--white);
+  border-radius: 15px;
+  height: fit-content;
+  width: 650px;
+}
+
+.content {
+  padding: var(--spacing-lg);
+  display: flex;
+  flex-direction: column;
+  gap: var(--spacing-md);
+}
+
+img {
+  width: 100%;
+  border-radius: 10px;
+}
+
+.title {
+  font-family: var(--font-heading);
+  font-size: 2rem;
+  color: var(--stone-900);
+}
+
+.description {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--stone-900);
+  line-height: 1.5;
+  font-weight: 500;
+}
+
+.preparation-section {
+  background-color: var(--rose-50);
+  padding: var(--spacing-md);
+  border-radius: 10px;
+}
+
+.preparation-section > .preparation-section-title {
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 1rem;
+  color: var(--rose-800);
+  margin-bottom: var(--spacing-sm);
+}
+
+.preparation-section > ul,
+.instructions-section > ul,
+.ingredients-section > ul {
+  margin-left: var(--spacing-md);
+}
+
+.preparation-section > ul > li,
+.instructions-section > ul > li,
+.ingredients-section > ul > li {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--stone-600);
+  margin-bottom: var(--spacing-sm);
+  padding-left: var(--spacing-sm);
+  line-height: 1.5;
+}
+
+.instructions-section > ul > li {
+  list-style-type: number;
+  list-style: bold;
+}
+
+span {
+  font-weight: 700;
+}
+
+.break-line {
+  opacity: 0.5;
+}
+
+.section-title {
+  font-family: var(--font-heading);
+  font-size: 1.25rem;
+  color: var(--brown-800);
+  margin-bottom: var(--spacing-sm);
+}
+
+ul li::marker {
+  font-size: 0.75rem;
+  color: var(--rose-800);
+  margin-right: var(--spacing-md);
+}
+
+.instructions-section > ul > li::marker,
+.ingredients-section > ul > li::marker {
+  font-weight: bold;
+  font-size: var(--font-size-sm);
+  color: var(--brown-800);
+}
+
+table {
+  width: 100%;
+  margin-top: var(--spacing-sm);
+}
+
+tr {
+  font-family: var(--font-body);
+  font-size: var(--font-size-sm);
+  color: var(--stone-600);
+}
+
+td {
+  padding: var(--spacing-sm) 0;
+  border-bottom: 1px solid var(--stone-150);
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+.number {
+  font-weight: 700;
+  color: var(--brown-800);
+}

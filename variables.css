@@ -1,0 +1,29 @@
+:root {
+  /* ========== COLORS ========== */
+  --white: hsl(0, 0%, 100%);
+  --stone-100: hsl(30, 54%, 90%);
+  --stone-150: hsl(30, 18%, 87%);
+  --stone-600: hsl(30, 10%, 34%);
+  --stone-900: hsl(24, 5%, 18%);
+  --brown-800: hsl(14, 45%, 36%);
+  --rose-800: hsl(332, 51%, 32%);
+  --rose-50: hsl(330, 100%, 98%);
+
+  /* ========== TYPOGRAPHY ========== */
+  --font-heading: 'Young Serif', serif;
+  --font-body: 'Outfit', sans-serif;
+  --font-size-sm: 14px;
+  --font-size-base: 16px;
+  --font-size-lg: 18px;
+  --font-size-xl: 20px;
+  
+  /* ========== SPACING ========== */
+  --spacing-xs: 8px;
+  --spacing-sm: 16px;
+  --spacing-md: 24px;
+  --spacing-lg: 32px;
+  --spacing-xl: 48px;
+  
+  /* ========== SHADOW ========== */
+  --shadow: 0px 4px 12px hsla(0, 0%, 0%, 0.08);
+}
